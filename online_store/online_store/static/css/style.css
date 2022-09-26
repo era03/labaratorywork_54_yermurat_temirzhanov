@@ -36,8 +36,9 @@
 }
 .products_content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 .product_image{
     width: 500px;
@@ -52,4 +53,10 @@
 .product_detail {
     margin-left: 50px;
     width: 500px;
+}
+h1 {
+    margin-bottom: 40px;
+}
+.product_card{
+    margin-bottom: 50px;
 }
