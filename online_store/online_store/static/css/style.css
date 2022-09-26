@@ -23,3 +23,19 @@
     width: 244px;
     margin-top: 20px;
 }
+.category_input {
+    margin-left: 22px;
+    width: 244px;
+}
+.create_button {
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: lightgray;
+    width: 100px;
+    margin-top: 30px;
+}
+.products_content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
