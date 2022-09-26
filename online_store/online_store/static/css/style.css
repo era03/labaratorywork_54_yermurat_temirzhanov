@@ -39,3 +39,17 @@
     justify-content: space-evenly;
     margin-top: 40px;
 }
+.product_image{
+    width: 500px;
+    height: 400px;
+}
+.product {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.product_detail {
+    margin-left: 50px;
+    width: 500px;
+}
