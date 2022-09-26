@@ -29,4 +29,4 @@ def product_add_view(request):
         'category': category[0]
     }
     new_product = Product.objects.create(**product)
-    return redirect('/')
+    return redirect('product_detail', pk=new_product.pk)
