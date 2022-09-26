@@ -7,6 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Product Add Page</h1>
+    <div class="container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="row">
+                <p>Product</p>
+                <input class="product_input" type="text" name="product">
+            </div>
+            <div class="row">
+                <p>Price</p>
+                <input class="price_input" type="number" name="price">
+            </div>
+            <div class="row">
+                <p>Image</p>
+                <input class="image_input" type="text" name="product_image">
+            </div>
+            <div class="row">
+                <p>Category</p>
+                <select class="status_select" name="category">
+                    {% for category in categories %}
+                    <option value="{{category.category}}">{{category.category}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="row">
+                <p>Description</p>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <button class="create_button" type="submit">Create</button>
+        </form>
+    </div>
 </body>
 </html>
